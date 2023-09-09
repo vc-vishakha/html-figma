@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 </head>
 
 <body>
@@ -83,24 +84,285 @@
                             </p>
                             <p class="stats">
                                 +2% this week
+                                <img src="images/arrow-up-green.svg" alt="arrow up" />
                             </p>
                         </div>
 
                         <div class="card">
-                            hi 2
+                            <p class="title">
+                                Revenue Initial Cards
+                            </p>
+                            <p class="count">
+                                CHF 13’250
+                            </p>
+                            <p class="stats">
+                                +17% this week
+                                <img src="images/arrow-up-green.svg" alt="arrow up" />
+                            </p>
                         </div>
                         <div class="card">
-                            hi 2
+                            <p class="title">
+                                Revenue Activations
+                            </p>
+                            <p class="count">
+                                CHF 7’007
+                            </p>
+                            <p class="stats">
+                                +2% this week
+                                <img src="images/arrow-up-green.svg" alt="arrow up" />
+                            </p>
                         </div>
                         <div class="card">
-                            hi 2
+                            <p class="title">
+                                Billing Positions
+                            </p>
+                            <p class="count">
+                                6’945
+                            </p>
+                            <p class="stats">
+                                <span>+2% this week</span>
+                                <img src="images/arrow-down-red.svg" alt="arrow down" style="margin-left: 2px" />
+                            </p>
                         </div>
 
+                    </div>
+
+                    <div class="graphs">
+                        <div class="performance-graph">
+                            <canvas id="performanceChart"></canvas>
+                        </div>
+                        <div class="performance-graph">
+                            <div class="head">
+                                <span>Top Partners</span>
+                                <div>
+                                    <span>This week</span>
+                                    <img src="images/sort-small.svg" alt="sort">
+                                </div>
+                            </div>
+                            <div class="statistic-list">
+                                <div>
+                                    <p class="count">
+                                        465
+                                    </p>
+                                    <p class="stats partners">
+                                        +2% Activations
+                                        <img src="images/arrow-up-green.svg" alt="arrow up" />
+                                    </p>
+                                    <p class="desc">Omnia Physio</p>
+                                </div>
+                                <div class="vertical-separator"></div>
+                                <div>
+                                    <p class="count">
+                                        245
+                                    </p>
+                                    <p class="stats partners">
+                                        +2% Activations
+                                        <img src="images/arrow-up-green.svg" alt="arrow up" />
+                                    </p>
+                                    <p class="desc">Medical Center X</p>
+                                </div>
+                                <div class="vertical-separator"></div>
+                                <div>
+                                    <p class="count">
+                                        154
+                                    </p>
+                                    <p class="stats partners">
+                                        -3% Activations
+                                        <img src="images/arrow-down-red.svg" alt="arrow up" />
+                                    </p>
+                                    <p class="desc">Kiosk West</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <div>
+                            <p>Open Invoices</p>
+                            <div>
+                                <span>Oldest Entries</span>
+                                <img src="images/sort-small.svg" alt="sort">
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Affiliate Partner</th>
+                                    <th>Accounting Date</th>
+                                    <th>Billable</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name">TCM Jaine</td>
+                                    <td>09.03.2023 11:21</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        Open
+                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">TCM Jaine</td>
+                                    <td>09.03.2023 11:21</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        Open
+                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">TCM Jaine</td>
+                                    <td>09.03.2023 11:21</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        Open
+                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">TCM Jaine</td>
+                                    <td>09.03.2023 11:21</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        Open
+                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table">
+                        <div>
+                            <p>Latest Activations</p>
+                            <div>
+                                <span>Latest Entries</span>
+                                <img src="images/sort-small.svg" alt="sort">
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Affiliate Partner</th>
+                                    <th class="card-type-head">Card Type</th>
+                                    <th>Card Nr.</th>
+                                    <th>Date</th>
+                                    <th>Shop Order Nr.</th>
+                                    <th>Shop Status</th>
+                                    <th>Billing Positions</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TCM Jaine</td>
+                                    <td>
+                                        <div class="card-type">
+                                            <span>One</span>
+                                        </div>
+                                    </td>
+                                    <td>643OsldfjlaAsflas</td>
+                                    <td>18.01.2023</td>
+                                    <td>#1522</td>
+                                    <td>Done</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        <img src="images/menu.svg" alt="action menu" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TCM Jaine</td>
+                                    <td>
+                                        <div class="card-type">
+                                            <span>One</span>
+                                        </div>
+                                    </td>
+                                    <td>643OsldfjlaAsflas</td>
+                                    <td>18.01.2023</td>
+                                    <td>#1522</td>
+                                    <td>Done</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        <img src="images/menu.svg" alt="action menu" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TCM Jaine</td>
+                                    <td>
+                                        <div class="card-type">
+                                            <span>One</span>
+                                        </div>
+                                    </td>
+                                    <td>643OsldfjlaAsflas</td>
+                                    <td>18.01.2023</td>
+                                    <td>#1522</td>
+                                    <td>Done</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        <img src="images/menu.svg" alt="action menu" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>TCM Jaine</td>
+                                    <td>
+                                        <div class="card-type">
+                                            <span>One</span>
+                                        </div>
+                                    </td>
+                                    <td>643OsldfjlaAsflas</td>
+                                    <td>18.01.2023</td>
+                                    <td>#1522</td>
+                                    <td>Done</td>
+                                    <td class="amount">CHF 49</td>
+                                    <td class="d-flex status-menu">
+                                        <img src="images/menu.svg" alt="action menu" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function initPerfChart() {
+            var ctx = document.getElementById("performanceChart").getContext('2d');
+
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"],
+                    datasets: [{
+                        label: 'Series 1', // Name the series
+                        data: [100, 250, 100, 0, 200, 300, 400, 380], // Specify the data values array
+                        fill: false,
+                        borderColor: '#2196f3', // Add custom color border (Line)
+                        backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                        borderWidth: 1 // Specify bar border width
+                    }],
+                },
+                options: {
+                    responsive: true, // Instruct chart js to respond nicely.
+                    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+                    title: {
+                        display: true,
+                        text: 'Overview Performance'
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            });
+        }
+        document.body.onload = function () {
+            initPerfChart()
+        };
+    </script>
 </body>
 
 </html>

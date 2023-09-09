@@ -80,7 +80,7 @@ sidebar {
                 gap: 15px;
             }
 
-            >span {
+            > span {
                 color: #CFCFCF;
             }
         }
@@ -124,7 +124,7 @@ sidebar {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 width: 290px;
                 height: 185px;
                 background: white;
@@ -140,28 +140,234 @@ sidebar {
                     letter-spacing: 0.36px;
                     word-wrap: break-word;
                     margin: 0;
+                    margin-left: 40px;
                 }
 
-                .count {
-                    color: #3B3551;
-                    font-size: 40px;
-                    font-weight: 500;
-                    word-wrap: break-word;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+
+            }
+        }
+
+        .graphs {
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
+            height: 350px;
+
+            .performance-graph {
+                width: 100%;
+                /* height: 340px; */
+                background: white;
+                border-radius: 10px;
+
+                &:nth-child(1) {
+                    padding: 10px;
                 }
 
-                .stats {
-                    color: #6F7F95;
-                    font-size: 14px;
-                    font-family: Manrope;
-                    font-weight: 600;
-                    line-height: 20px;
-                    letter-spacing: 0.28px;
-                    word-wrap: break-word;
-                    margin: 0;
+                &:nth-child(2) {
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px 20px;
+
+                    > span {
+                        color: #3B3551;
+                        font-size: 20px;
+                        font-family: Manrope;
+                        font-weight: 700;
+                        line-height: 20px;
+                        letter-spacing: 0.40px;
+                    }
+
+                    > div >span {
+                        color: #6F7F95;
+                        font-size: 16px;
+                        font-family: Manrope;
+                        font-weight: 600;
+                        line-height: 20px;
+                        letter-spacing: 0.32px;
+                    }
+
+                    > div {
+                        display: flex;
+                    }
+                }
+
+                .statistic-list {
+                    display: flex;
+                    justify-content: space-around;
+
+                    +div {
+                        padding: 10px;
+                    }
+
+                    .desc {
+                        margin-left: 40px;
+                        color: black;
+                        font-size: 15px;
+                        font-family: Manrope;
+                        font-weight: 700;
+                        line-height: 20px;
+                        letter-spacing: 0.32px;
+                        word-wrap: break-word;
+                    }
                 }
             }
         }
     }
+}
+
+.count {
+    color: #3B3551;
+    font-size: 40px;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin: 10px 0 10px 40px;
+}
+
+.stats {
+    color: #6F7F95;
+    font-size: 14px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+    margin: 0;
+    display: flex;
+    margin-left: 40px;
+
+    &.partners {
+        padding-bottom: 40px;
+    }
+}
+
+.vertical-separator {
+    height: 100%;
+    border: 0.5px #EBEBEB solid;
+    margin-left: 20px;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+
+        > p {
+            color: #3B3551;
+            font-size: 20px;
+            font-family: Manrope;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.40px;
+        }
+
+        > div {
+            display: flex;
+            width: auto;
+            align-items: center;
+
+            > span {
+                color: #6F7F95;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                letter-spacing: 0.32px;
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+th {
+    text-align: left;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 10px;
+
+    &:last-child {
+        text-align: right;
+    }
+
+    &.card-type-head {
+        width: 10%;
+    }
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #6B6B6B;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 600;
+    border-bottom: 1px solid #EBEBEB;
+
+    &:last-child {
+        text-align: right;
+    }
+}
+
+.name {
+    color: #FF6B00;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+}
+
+.amount {
+    color: #90D272;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.card-type {
+    width: 60px;
+    height: 20px;
+    background: rgba(255, 107.10, 0, 0.10);
+    border-radius: 10px;
+    text-align: center;
+
+    > span {
+        color: #FF6B00;
+        font-size: 16px;
+        font-family: Manrope;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.32px;
+    }
+}
+
+.status-menu {
+    justify-content: flex-end;
 }
