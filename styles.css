@@ -16,7 +16,14 @@ body {
 
 sidebar {
     margin: 12px 36px 0 36px;
-    height: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > div {
+        width: 220px;
+    }
 
     .sidebar-logo {
         margin-top: 40px;
@@ -80,7 +87,7 @@ sidebar {
                 gap: 15px;
             }
 
-            > span {
+            >span {
                 color: #CFCFCF;
             }
         }
@@ -132,18 +139,6 @@ sidebar {
                 border-radius: 10px;
                 font-family: Manrope;
 
-                .title {
-                    color: #3B3551;
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 20px;
-                    letter-spacing: 0.36px;
-                    word-wrap: break-word;
-                    margin: 0;
-                    margin-left: 40px;
-                }
-
-
             }
         }
 
@@ -177,7 +172,7 @@ sidebar {
                     justify-content: space-between;
                     margin: 0px 20px;
 
-                    > span {
+                    >span {
                         color: #3B3551;
                         font-size: 20px;
                         font-family: Manrope;
@@ -186,7 +181,7 @@ sidebar {
                         letter-spacing: 0.40px;
                     }
 
-                    > div >span {
+                    >div>span {
                         color: #6F7F95;
                         font-size: 16px;
                         font-family: Manrope;
@@ -195,7 +190,7 @@ sidebar {
                         letter-spacing: 0.32px;
                     }
 
-                    > div {
+                    >div {
                         display: flex;
                     }
                 }
@@ -262,12 +257,12 @@ sidebar {
     border-radius: 10px;
     margin-top: 30px;
 
-    > div {
+    .table-heading {
         display: flex;
         justify-content: space-between;
         padding: 0px 15px;
 
-        > p {
+        >p {
             color: #3B3551;
             font-size: 20px;
             font-family: Manrope;
@@ -276,12 +271,12 @@ sidebar {
             letter-spacing: 0.40px;
         }
 
-        > div {
+        >div {
             display: flex;
             width: auto;
             align-items: center;
 
-            > span {
+            >span {
                 color: #6F7F95;
                 font-size: 16px;
                 font-weight: 600;
@@ -357,8 +352,15 @@ td {
     background: rgba(255, 107.10, 0, 0.10);
     border-radius: 10px;
     text-align: center;
+    &.open {
+        background: #f7f7f7;
+        > span {
+            color: black;
+            font-size: 14px;
+        }
+    }
 
-    > span {
+    >span {
         color: #FF6B00;
         font-size: 16px;
         font-family: Manrope;
@@ -370,4 +372,102 @@ td {
 
 .status-menu {
     justify-content: flex-end;
+}
+
+.title {
+    color: #3B3551;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.36px;
+    word-wrap: break-word;
+    margin: 0;
+
+    &.user-name {
+        margin-bottom: 24px;
+    }
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+
+.logout-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    > span {
+        color: #A0A0A0;
+        font-size: 16px;
+        font-family: Manrope;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.32px;
+    }
+}
+
+.pagination-bar {
+    height: 80px;
+    box-shadow: 0px 2.294900417327881px 3.0598671436309814px rgba(227.37, 227.37, 227.37, 0.29);
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.76px;
+    display: flex;
+    .items {
+        padding-left: 11.47px;
+        padding-right: 11.47px;
+        padding-top: 7.65px;
+        padding-bottom: 7.65px;
+        border-top-left-radius: 4.59px;
+        border-top-right-radius: 4.59px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 7.65px;
+        display: flex;
+        &.pages{
+            background: white;
+            margin-right: 10px;
+        }
+        &.next{
+            background: #FF6B00;
+            border-radius: 4.59px;
+        }
+        .page-number {
+            padding-left: 11.47px;
+            padding-right: 11.47px;
+            padding-top: 7.65px;
+            padding-bottom: 7.65px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 7.65px;
+            display: inline-flex;
+
+            &.next-btn {
+                padding: 7px 8px;
+                .btn {
+                    color: white;
+                    font-size: 12.24px;
+                    font-family: Manrope;
+                    font-weight: 600;
+                    line-height: 15.30px;
+                }
+            }
+
+            &.active {
+                background: #EBEBEB;
+                > div {
+                    color: #3B3551;
+                }
+            }
+            > div {
+                color: #6F7F95;
+                font-size: 14px;
+                font-family: Manrope;
+                font-weight: 500;
+                line-height: 15.30px;
+                letter-spacing: 0.24px;
+            }
+        }
+    }
 }

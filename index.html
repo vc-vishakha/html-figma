@@ -16,52 +16,66 @@
 <body>
     <div class="container">
         <sidebar>
-            <img class="sidebar-logo" src="images/logo.svg" alt="Calopad" />
-            <p class="sidebar-subtitle">Cards Management System</p>
-            <div class="sidebar-item-list">
-                <div class="item">
-                    <div class="item-img">
-                        <img src="images/dashboard.svg" alt="dashboard" />
+            <div>
+                <img class="sidebar-logo" src="images/logo.svg" alt="Calopad" />
+                <p class="sidebar-subtitle">Cards Management System</p>
+                <div class="sidebar-item-list">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="images/dashboard.svg" alt="dashboard" />
+                        </div>
+                        <div class="item-title">
+                            Dashboard
+                        </div>
                     </div>
-                    <div class="item-title">
-                        Dashboard
-                    </div>
-                </div>
-                <div class="item-separator"></div>
+                    <div class="item-separator"></div>
 
-                <div class="item group">
-                    <div class="item-title-group">
-                        Partners
+                    <div class="item group">
+                        <div class="item-title-group">
+                            Partners
+                        </div>
+                        <div class="item-img">
+                            <img src="images/arrow-down.svg" alt="arrow down" />
+                        </div>
                     </div>
-                    <div class="item-img">
-                        <img src="images/arrow-down.svg" alt="arrow down" />
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="images/partners.svg" alt="partners" />
+                        </div>
+                        <div class="item-title active">
+                            Partners
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="images/partners.svg" alt="partners" />
-                    </div>
-                    <div class="item-title active">
-                        Partners
-                    </div>
-                </div>
-                <div class="item-separator"></div>
+                    <div class="item-separator"></div>
 
-                <div class="item group">
-                    <div class="item-title-group">
-                        Settings
+                    <div class="item group">
+                        <div class="item-title-group">
+                            Settings
+                        </div>
+                        <div class="item-img">
+                            <img src="images/arrow-down.svg" alt="arrow down" />
+                        </div>
                     </div>
-                    <div class="item-img">
-                        <img src="images/arrow-down.svg" alt="arrow down" />
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="images/settings.svg" alt="settings" />
+                        </div>
+                        <div class="item-title">
+                            General
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="images/settings.svg" alt="settings" />
-                    </div>
-                    <div class="item-title">
-                        General
-                    </div>
+            </div>
+            <div class="foot">
+                <p class="title user-name">
+                    Michael Breiter
+                </p>
+                <div class="card-type">
+                    <span>ADMIN</span>
+                </div>
+                <div class="logout-menu">
+                    <img src="images/logout.svg" alt="logout" />
+                    <span>Logout</span>
                 </div>
             </div>
         </sidebar>
@@ -76,7 +90,7 @@
                 <div>
                     <div class="card-list">
                         <div class="card">
-                            <p class="title">
+                            <p class="title ml-40">
                                 Cards Total / Activated
                             </p>
                             <p class="count">
@@ -89,7 +103,7 @@
                         </div>
 
                         <div class="card">
-                            <p class="title">
+                            <p class="title ml-40">
                                 Revenue Initial Cards
                             </p>
                             <p class="count">
@@ -101,7 +115,7 @@
                             </p>
                         </div>
                         <div class="card">
-                            <p class="title">
+                            <p class="title ml-40">
                                 Revenue Activations
                             </p>
                             <p class="count">
@@ -113,7 +127,7 @@
                             </p>
                         </div>
                         <div class="card">
-                            <p class="title">
+                            <p class="title ml-40">
                                 Billing Positions
                             </p>
                             <p class="count">
@@ -177,7 +191,7 @@
                     </div>
 
                     <div class="table">
-                        <div>
+                        <div class="table-heading">
                             <p>Open Invoices</p>
                             <div>
                                 <span>Oldest Entries</span>
@@ -199,8 +213,10 @@
                                     <td>09.03.2023 11:21</td>
                                     <td class="amount">CHF 49</td>
                                     <td class="d-flex status-menu">
-                                        Open
-                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                        <div class="card-type open">
+                                            <span>Open</span>
+                                        </div>
+                                        <img src="images/arrow-down-gray.svg" alt="arrow down" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -208,8 +224,10 @@
                                     <td>09.03.2023 11:21</td>
                                     <td class="amount">CHF 49</td>
                                     <td class="d-flex status-menu">
-                                        Open
-                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                        <div class="card-type open">
+                                            <span>Open</span>
+                                        </div>
+                                        <img src="images/arrow-down-gray.svg" alt="arrow down" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -217,8 +235,10 @@
                                     <td>09.03.2023 11:21</td>
                                     <td class="amount">CHF 49</td>
                                     <td class="d-flex status-menu">
-                                        Open
-                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                        <div class="card-type open">
+                                            <span>Open</span>
+                                        </div>
+                                        <img src="images/arrow-down-gray.svg" alt="arrow down" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -226,16 +246,48 @@
                                     <td>09.03.2023 11:21</td>
                                     <td class="amount">CHF 49</td>
                                     <td class="d-flex status-menu">
-                                        Open
-                                        <img src="images/arrow-down.svg" alt="arrow down" />
+                                        <div class="card-type open">
+                                            <span>Open</span>
+                                        </div>
+                                        <img src="images/arrow-down-gray.svg" alt="arrow down" />
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="pagination-bar">
+                            <div class="items pages">
+                                <div class="page-number">
+                                    <div> 01</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 02</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 03</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 04</div>
+                                </div>
+                                <div class="page-number active">
+                                    <div> 05</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 15</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 20</div>
+                                </div>
+                            </div>
+                            <div class="items next">
+                                <div class="page-number next-btn">
+                                    <div class="btn"> Next</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="table">
-                        <div>
+                        <div class="table-heading">
                             <p>Latest Activations</p>
                             <div>
                                 <span>Latest Entries</span>
@@ -323,6 +375,36 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="pagination-bar">
+                            <div class="items pages">
+                                <div class="page-number">
+                                    <div> 01</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 02</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 03</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 04</div>
+                                </div>
+                                <div class="page-number active">
+                                    <div> 05</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 15</div>
+                                </div>
+                                <div class="page-number">
+                                    <div> 20</div>
+                                </div>
+                            </div>
+                            <div class="items next">
+                                <div class="page-number next-btn">
+                                    <div class="btn"> Next</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
