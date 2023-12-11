@@ -1,17 +1,12 @@
 body {
     margin: 0;
+    font-family: Manrope, sans-serif;
 }
-
-/* .fa-solid {
-    color: #A0A0A0;
-} */
 
 .container {
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* font-family: "Poppins", sans-serif; */
-    /* margin: 24px; */
 }
 
 sidebar {
@@ -31,7 +26,6 @@ sidebar {
 
     .sidebar-subtitle {
         margin-top: 5px;
-        font-family: Manrope, sans-serif;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.26px;
@@ -52,7 +46,6 @@ sidebar {
             align-items: flex-start;
             gap: 30px;
             display: inline-flex;
-            font-family: Manrope, sans-serif;
 
             .item-img {
                 width: 20px;
@@ -116,7 +109,6 @@ sidebar {
         .page-title {
             color: #3B3551;
             font-size: 25px;
-            font-family: Manrope, sans-serif;
             font-weight: 800;
             line-height: 20px;
             letter-spacing: 0.50px;
@@ -137,7 +129,6 @@ sidebar {
                 background: white;
                 box-shadow: 0px 3px 4px rgba(227.37, 227.37, 227.37, 0.29);
                 border-radius: 10px;
-                font-family: Manrope;
 
             }
         }
@@ -152,7 +143,6 @@ sidebar {
 
             .performance-graph {
                 width: 100%;
-                /* height: 340px; */
                 background: white;
                 border-radius: 10px;
 
@@ -175,7 +165,6 @@ sidebar {
                     >span {
                         color: #3B3551;
                         font-size: 20px;
-                        font-family: Manrope;
                         font-weight: 700;
                         line-height: 20px;
                         letter-spacing: 0.40px;
@@ -184,7 +173,6 @@ sidebar {
                     >div>span {
                         color: #6F7F95;
                         font-size: 16px;
-                        font-family: Manrope;
                         font-weight: 600;
                         line-height: 20px;
                         letter-spacing: 0.32px;
@@ -207,7 +195,6 @@ sidebar {
                         margin-left: 40px;
                         color: black;
                         font-size: 15px;
-                        font-family: Manrope;
                         font-weight: 700;
                         line-height: 20px;
                         letter-spacing: 0.32px;
@@ -225,12 +212,12 @@ sidebar {
     font-weight: 600;
     word-wrap: break-word;
     margin: 10px 0 10px 40px;
+    font-family: auto, sans-serif;
 }
 
 .stats {
     color: #6F7F95;
     font-size: 14px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0.28px;
@@ -265,7 +252,6 @@ sidebar {
         >p {
             color: #3B3551;
             font-size: 20px;
-            font-family: Manrope;
             font-weight: 700;
             line-height: 20px;
             letter-spacing: 0.40px;
@@ -295,7 +281,6 @@ table {
 th {
     text-align: left;
     font-size: 16px;
-    font-family: Manrope;
     font-weight: 700;
     line-height: 20px;
     color: black;
@@ -316,7 +301,6 @@ td {
     padding-bottom: 10px;
     color: #6B6B6B;
     font-size: 16px;
-    font-family: Manrope;
     font-weight: 600;
     border-bottom: 1px solid #EBEBEB;
 
@@ -328,7 +312,6 @@ td {
 .name {
     color: #FF6B00;
     font-size: 16px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0.32px;
@@ -337,7 +320,6 @@ td {
 .amount {
     color: #90D272;
     font-size: 16px;
-    font-family: Manrope;
     font-weight: 600;
     line-height: 20px;
 }
@@ -363,7 +345,6 @@ td {
     >span {
         color: #FF6B00;
         font-size: 16px;
-        font-family: Manrope;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.32px;
@@ -400,7 +381,6 @@ td {
     > span {
         color: #A0A0A0;
         font-size: 16px;
-        font-family: Manrope;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.32px;
@@ -448,7 +428,6 @@ td {
                 .btn {
                     color: white;
                     font-size: 12.24px;
-                    font-family: Manrope;
                     font-weight: 600;
                     line-height: 15.30px;
                 }
@@ -463,7 +442,6 @@ td {
             > div {
                 color: #6F7F95;
                 font-size: 14px;
-                font-family: Manrope;
                 font-weight: 500;
                 line-height: 15.30px;
                 letter-spacing: 0.24px;
